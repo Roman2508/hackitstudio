@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block main %}
+<h1 class="title container">Створити оголошення</h1>
+
+<form action="/create-ad" method="post" class="create-ad-form container">
+  <div class="form-block">
+    <label for="title">Вкажіть назву оголошення:</label>
+    <input type="text" id="title" name="title" />
+  </div>
+
+  <div class="form-block">
+    <label for="description">Опис:</label>
+    <textarea id="description" name="description"></textarea>
+  </div>
+
+  <div class="form-block">
+    <label for="price">Ціна:</label>
+    <input type="number" id="price" name="price" />
+  </div>
+
+  <div class="form-block">
+    <label for="photo">Фото:</label>
+    <input type="url" id="photo" name="photo" />
+  </div>
+
+  <div class="form-block">
+    <label for="mileage">Пробіг (км.):</label>
+    <input type="number" id="mileage" name="mileage" />
+  </div>
+
+  <div class="form-block">
+    <label for="engine">Об'єм двигуна:</label>
+    <input type="number" id="engine" name="engine" />
+  </div>
+
+  <div class="form-block">
+    <label for="color">Колір:</label>
+    <input type="text" id="color" name="color" />
+  </div>
+
+  <div class="form-block">
+    <label for="transmission">Коробка передач:</label>
+    <select id="transmission" name="transmission">
+      <option>Механічна</option>
+      <option>Автоматична</option>
+      <option>Варіатор</option>
+      <option>Адаптивна</option>
+    </select>
+  </div>
+
+  <div class="form-block">
+    <button>Зберегти</button>
+  </div>
+</form>
+{% endblock %}

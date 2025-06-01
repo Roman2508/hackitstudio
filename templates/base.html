@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../static/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../static/img/logo.png" />
+        <p>CarShop</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="/" class="active">Головна</a></li>
+          <li><a href="/catalog">Каталог</a></li>
+          <li><a href="/create-ad">Створити оголошення</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <img src="../static/img/user.svg" />
+      </div>
+    </header>
+
+    <main>{%block main%} {%endblock%}</main>
+
+    <footer>
+      <p>© "Car Shop" 2024</p>
+    </footer>
+  </body>
+</html>
